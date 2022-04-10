@@ -13,7 +13,7 @@ const Faq = () => {
     return (
       <FaqBlock
         key={i}
-        questionText={faq.questionText}
+        // questionText={faq.questionText}
         answerText={faq.answerText}
       />
     );
@@ -32,7 +32,7 @@ const Faq = () => {
     >
       <ImgWrapper>
         <MainHeader style={{ color: palette.white, marginBottom: 50 }}>
-          FAQ
+          Rules
         </MainHeader>
         <MainContainer>{faqElems}</MainContainer>
       </ImgWrapper>
@@ -46,12 +46,11 @@ const MainContainer = styled.div`
   display: grid;
   column-gap: 50px;
   row-gap: 50px;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(2, minmax(200px, 1fr)); */
   justify-content: center;
-  width: 100%;
   margin: 0 auto;
   max-width: 800px;
-  padding: 0px 20px;
+  padding: 75px 75px;
 
   @media (max-width: 700px) {
     grid-template-columns: repeat(1, 1fr);
