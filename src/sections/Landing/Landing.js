@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 import Section from 'components/Section';
 import Navbar from './components/Navbar';
-import ideateLogoImg from './components/ideate-logo.svg';
 import RegisterButton from 'components/RegisterButton';
 import landingBackgroundImg from './components/landing-background.svg';
+import logo from './components/logo.svg'
 
 const Landing = () => {
   return (
@@ -26,7 +26,7 @@ const Landing = () => {
       >
         <div style={{ paddingTop: 30, paddingBottom: 300 }}>
           <Navbar />
-          <Subtitle>a virtual designathon | July 25-26, 2020</Subtitle>
+          <Subtitle>March 23, 2022</Subtitle>
           <div
             style={{
               display: 'flex',
@@ -34,7 +34,7 @@ const Landing = () => {
               alignItems: 'center',
             }}
           >
-            <IdeateLogo src={ideateLogoImg} />
+            <CodeScapeLogo src={logo} />
             <a
               href="https://ideate.devpost.com/"
               target="_blank"
@@ -59,9 +59,9 @@ const Subtitle = styled.p`
   margin-bottom: 40px;
 `;
 
-const IdeateLogo = styled.img`
+const CodeScapeLogo = styled.img`
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
   margin-bottom: 50px;
   padding: 0px 30px;
 `;
