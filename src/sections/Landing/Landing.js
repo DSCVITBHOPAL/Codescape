@@ -26,7 +26,7 @@ const Landing = () => {
       >
         <div style={{ paddingTop: 30, paddingBottom: 300 }}>
           <Navbar />
-          <Subtitle>March 23, 2022</Subtitle>
+          <Subtitle>April 23, 2022</Subtitle>
           <div
             style={{
               display: 'flex',
