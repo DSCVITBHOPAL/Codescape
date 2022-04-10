@@ -18,7 +18,7 @@ const Tracks = () => {
       innerContainerStyles={{ maxWidth: 1300 }}
       sectionId="tracks"
     >
-      <MainHeader style={{ color: palette.white }}>TRACKS</MainHeader>
+      <MainHeader style={{ color: palette.white }}>WINNERS</MainHeader>
       <MainContainer>{trackBlockElems}</MainContainer>
     </Section>
   );

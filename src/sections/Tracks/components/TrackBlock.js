@@ -10,7 +10,7 @@ const TrackBlock = ({ info }) => {
       <img
         src={info.image}
         alt="Track"
-        style={{ height: 115, width: '100%' }}
+        style={{ width: '100%' }}
       />
 
       <BodyHeader style={{ margin: '40px auto 0px auto' }}>
