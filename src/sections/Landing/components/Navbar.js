@@ -109,7 +109,7 @@ class Navbar extends Component {
           schedule
         </NavLink>
         <NavLink key={'faq'} href={`#faq`}>
-          faq
+          rules
         </NavLink>
         <NavLink key={'sponsors'} href={`#sponsors`}>
           sponsors
