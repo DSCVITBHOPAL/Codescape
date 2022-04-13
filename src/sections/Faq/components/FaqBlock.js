@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import { BodyHeader, BodyText } from 'components/typography';
 import palette from 'assets/palette';
 
-const FaqBlock = ({ questionText, answerText }) => {
+const FaqBlock = ({ answerText }) => {
   return (
     <Container>
-      <BodyHeader style={{ color: palette.white, marginBottom: 20 }}>
+      {/* <BodyHeader style={{ color: palette.white, marginBottom: 20 }}>
         {questionText}
-      </BodyHeader>
+      </BodyHeader> */}
       <BodyText style={{ color: palette.white }}>{answerText}</BodyText>
     </Container>
   );

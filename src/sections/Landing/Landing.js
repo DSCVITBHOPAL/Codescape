@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 import Section from 'components/Section';
 import Navbar from './components/Navbar';
-import ideateLogoImg from './components/ideate-logo.svg';
 import RegisterButton from 'components/RegisterButton';
 import landingBackgroundImg from './components/landing-background.svg';
+import logo from './components/logo.svg'
+import gdscLogo from './components/gdsc-logo.png'
 
 const Landing = () => {
   return (
@@ -26,7 +27,11 @@ const Landing = () => {
       >
         <div style={{ paddingTop: 30, paddingBottom: 300 }}>
           <Navbar />
-          <Subtitle>a virtual designathon | July 25-26, 2020</Subtitle>
+          <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', paddingTop: 75 }}>
+            <GDSCLogo src={gdscLogo} />
+
+            <Subtitle>AdVITya Fest | April 23, 2022</Subtitle>
+          </div>
           <div
             style={{
               display: 'flex',
@@ -34,7 +39,7 @@ const Landing = () => {
               alignItems: 'center',
             }}
           >
-            <IdeateLogo src={ideateLogoImg} />
+            <CodeScapeLogo src={logo} />
             <a
               href="https://ideate.devpost.com/"
               target="_blank"
@@ -55,13 +60,17 @@ const Subtitle = styled.p`
   font-size: 18px;
   color: #f8f0e7;
   text-align: center;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   margin-bottom: 40px;
 `;
-
-const IdeateLogo = styled.img`
+const GDSCLogo = styled.img`
+  width: 200px;
+  margin-bottom: 50px;
+  padding: 0px 30px;
+`
+const CodeScapeLogo = styled.img`
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
   margin-bottom: 50px;
   padding: 0px 30px;
 `;

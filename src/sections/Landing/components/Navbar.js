@@ -100,7 +100,7 @@ class Navbar extends Component {
           about
         </NavLink>
         <NavLink key={'tracks'} href={`#tracks`}>
-          tracks
+          winners
         </NavLink>
         <NavLink key={'speakers'} href={`#speakers`}>
           speakers
@@ -109,7 +109,7 @@ class Navbar extends Component {
           schedule
         </NavLink>
         <NavLink key={'faq'} href={`#faq`}>
-          faq
+          rules
         </NavLink>
         <NavLink key={'sponsors'} href={`#sponsors`}>
           sponsors
