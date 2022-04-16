@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-
 import styled from 'styled-components';
 import palette from 'assets/palette';
-import ScheduleRow from './ScheduleRow';
+import LeaderBoardRow from './LeaderBoardRow';
 
-class ScheduleItemCard extends Component {
+class LeaderBoardItemCard extends Component {
   state = {
     isOpen: false,
   };
@@ -16,19 +15,19 @@ class ScheduleItemCard extends Component {
   };
 
   render() {
-    const events = this.props.events;
+    const leaderboard = this.props.leaderboard;
 
     return (
       <CardBase>
-        {events.map((info) => (
-          <ScheduleRow info={info} />
+        {leaderboard.map((info) => (
+          <LeaderBoardRow info={info} />
         ))}
       </CardBase>
     );
   }
 }
 
-export default ScheduleItemCard;
+export default LeaderBoardItemCard;
 
 const dateColSmWidth = '120px';
 

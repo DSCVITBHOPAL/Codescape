@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Section from 'components/Section';
 import Navbar from './components/Navbar';
+import CountdownTimer from './components/CountdownTimer/CountdownTimer'
 import RegisterButton from 'components/RegisterButton';
 import landingBackgroundImg from './components/landing-background.svg';
 import logo from './components/logo.svg'
@@ -41,11 +41,11 @@ const Landing = () => {
           >
             <CodeScapeLogo src={logo} />
             <a
-              href="https://ideate.devpost.com/"
+              href="https://gdsc.community.dev/events/details/developer-student-clubs-vellore-institute-of-technology-vit-bhopal-presents-advitya22-codescape/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <RegisterButton>See Submissions</RegisterButton>
+              <RegisterButton><CountdownTimer countdownTimestampMs={1659983662000}/></RegisterButton>
             </a>
           </div>
         </div>

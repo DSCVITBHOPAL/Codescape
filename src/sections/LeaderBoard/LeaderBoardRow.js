@@ -1,34 +1,33 @@
 import React, { useState } from 'react';
 import { BodyHeader, BodyText } from 'components/typography';
-
 import styled from 'styled-components';
 import palette from 'assets/palette';
 
-const ScheduleRow = ({ info }) => {
+const LeaderBoardRow = ({ info }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <EventRow>
       <EventTime>
-        {info.start}
+        {info.rank}
         <br />
-        {info.end}
+        {/* {info.end} */}
       </EventTime>
       <EventInfo>
         <BodyHeader>{info.name}</BodyHeader>
         <BodyText>{info.description}</BodyText>
         {/* <BodyText style={{fontSize:16}}>{info.link}</BodyText> */}
-        <a href={info.link} target='_blank'
+        <a href={"https://github.com/" + info.link} target='_blank'
             style={{fontSize:16, opacity:'50%'}}>
           {info.link}
         </a>
-        {info.additional && (
+        {info.score && (
           <div>
             {isOpen && (
-              <BodyText style={{ marginTop: 10 }}>{info.additional}</BodyText>
+              <BodyText style={{ marginTop: 10 }}>{info.score}</BodyText>
             )}
             <p onClick={() => setIsOpen((v) => !v)}>
-              See {isOpen ? 'Less' : 'More'}
+               {isOpen ? 'Hide' : 'Show'} Score
             </p>
           </div>
         )}
@@ -37,7 +36,7 @@ const ScheduleRow = ({ info }) => {
   );
 };
 
-export default ScheduleRow;
+export default LeaderBoardRow;
 
 const dateColSmWidth = '120px';
 

@@ -21,14 +21,14 @@ const sections = [
     id: 'tracks',
     sectionColor: palette.green,
   },
+  // {
+  //   title: 'Speakers',
+  //   id: 'speakers',
+  //   sectionColor: palette.white,
+  // },
   {
-    title: 'Speakers',
-    id: 'speakers',
-    sectionColor: palette.white,
-  },
-  {
-    title: 'Schedule',
-    id: 'schedule',
+    title: 'Leaderboard',
+    id: 'leaderboard',
     sectionColor: palette.red,
   },
   {
@@ -36,11 +36,11 @@ const sections = [
     id: 'faq',
     sectionColor: palette.black,
   },
-  {
-    title: 'Sponsors',
-    id: 'sponsors',
-    sectionColor: palette.blue,
-  },
+  // {
+  //   title: 'Sponsors',
+  //   id: 'sponsors',
+  //   sectionColor: palette.blue,
+  // },
   {
     title: 'Footer',
     id: 'footer',
@@ -102,18 +102,18 @@ class Navbar extends Component {
         <NavLink key={'tracks'} href={`#tracks`}>
           winners
         </NavLink>
-        <NavLink key={'speakers'} href={`#speakers`}>
+        {/* <NavLink key={'speakers'} href={`#speakers`}>
           speakers
-        </NavLink>
-        <NavLink key={'schedule'} href={`#schedule`}>
+        </NavLink> */}
+        <NavLink key={'leaderboard'} href={`#leaderboard`}>
           schedule
         </NavLink>
         <NavLink key={'faq'} href={`#faq`}>
           rules
         </NavLink>
-        <NavLink key={'sponsors'} href={`#sponsors`}>
+        {/* <NavLink key={'sponsors'} href={`#sponsors`}>
           sponsors
-        </NavLink>
+        </NavLink> */}
       </Container>
     );
   }
