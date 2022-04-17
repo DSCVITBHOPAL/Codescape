@@ -8,6 +8,8 @@ import Faq from 'sections/Faq/Faq';
 import Sponsors from 'sections/Sponsors/Sponsors';
 import Footer from 'sections/Footer/Footer';
 
+import './App.css';
+
 function App() {
   return (
     <div className="App">
