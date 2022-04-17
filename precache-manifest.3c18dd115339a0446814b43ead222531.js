@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cda9979206fcc598c80f5fa66d9c2f82",
+    "revision": "fcd70fa3ee16f2e212d7234e208f079a",
     "url": "/Codescape/index.html"
   },
   {
-    "revision": "a0380ef6c4d6774caef1",
-    "url": "/Codescape/static/css/main.4c9ac43f.chunk.css"
+    "revision": "73b5277e5c9b81313cc2",
+    "url": "/Codescape/static/css/main.7a97f95c.chunk.css"
   },
   {
     "revision": "15bc6361a462a622f89f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Codescape/static/js/2.b7bf04f2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a0380ef6c4d6774caef1",
-    "url": "/Codescape/static/js/main.ca7bdacc.chunk.js"
+    "revision": "73b5277e5c9b81313cc2",
+    "url": "/Codescape/static/js/main.5b7ccc19.chunk.js"
   },
   {
     "revision": "f0e8779633a8e87cdf5b",
